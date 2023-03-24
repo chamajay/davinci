@@ -1,0 +1,102 @@
+/* Import navigation css */
+@import "../student_2/css/navigation.css";
+
+
+/* Import particles css */
+@import "particle.css";
+
+/* Import animate css library  */
+@import url("../lib/animate.min.css"); 
+
+/* Load local fonts */
+@font-face {
+    font-family: "Cherish";
+    src: url("../font/Cherish-Regular.ttf");
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vh;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5vh;
+    margin-left: 15%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3vw;
+    width: 100%;
+    height: 100%;
+    padding: 4vw;
+    /* border: 2px solid white; */
+}
+
+.card > img {
+    height: 90%;
+    border: 5px solid #FFE600;
+}
+
+.info-wrapper {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    padding: 3vh 3vh;
+    color: white;
+    background-color: #121212;
+    border: 3px solid #FFE600;
+    text-align: justify;
+    z-index: 5;
+}
+
+.info-wrapper h1 {
+    font-size: 8vh;
+}
+
+.info-wrapper h1 span {
+    font-family: 'Cherish', cursive;
+}
+
+.info-wrapper p {
+    font-size: 2.8vh
+}
+
+.link-btn {
+    display: inline-block;
+    /* position: relative; */
+    top: 3vh;
+    border: none;
+    color: white;
+    background-color: black;
+    font-size: 2.8vh;
+    margin-left: auto;
+    height: 6vh;
+    width: 13vw;
+    padding: 1.2vh 1vh;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link-btn:hover{
+    color: black;
+    background-color: #FFE600;
+}
