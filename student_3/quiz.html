@@ -1,0 +1,74 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Quiz</title>
+        <link rel="stylesheet" href="./css/quiz.css" />
+        <script src="./lib/particles.min.js"></script>
+    </head>
+    <body>
+        <div id="particles-js"></div>
+        <div class="sidebar">
+        <div id="logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <nav id="navi">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../lifestory.html">Life Story</a></li>
+                <li><a href="../student_4/gallery.html">Gallery</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+                <li><a href="../student_1/products.html">Products</a></li>
+                <li><a href="../student_2/queries.html">Queries</a></li>
+                <li><a href="../student_4/sitemap.html">Sitemap</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="editor-link"><a href="rayaan.html">Page Developer</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <!-- <h2>DavinCi Quiz</h2> -->
+
+        <div class="intro">
+            <h2 class="howWell">How well do you know</h2>
+            <h2 class="ldc">Leonardo Da Vinci?</h2>
+            <h1>Test your knowledge,</h1>
+            <div class="ruleBox">
+                <h4>Rules for the Quiz</h4>
+                <p class="rule"> You have 60 seconds to answer all 10 questions.<br></p>
+                <p class="rule"> For each correct answer you will get 2 points. </p>
+                <p class="rule"> For each incorrect answer you will loose 1 point. </p>
+                <p class="rule"> You can only select one answer for each question. </p>
+            </div>
+            <button id="start_btn" onclick="start(this)"> Start Quiz </button>
+        </div>
+
+        <div class="container">
+            <div class="header">
+                <!-- <h2 id="qOutOf"></h2> -->
+                <div id="countdown"></div>
+            </div>
+            <div class="block">
+                <div id="quiz"></div>
+            </div>
+            <div class="button-block">
+                <button id="previous"><span>Previous</span></button>
+                <button id="next"><span>Next</span></button>
+                <button id="submit" onclick="finalSlide(this)"> Submit Quiz </button>
+            </div>
+        </div>
+
+        <div class="endPage">
+            <p id="questionAnswer"></p>
+            <p id="wish"></p>
+            <p id="finalScore"></p>
+            <p id="spentTime"></p>
+            <div class="resultSheet"></div>
+            <button id="restart" onclick="location.reload()">Try Again</button>
+        </div>
+        <script src="./js/quiz.js"></script>
+
+    </div>  
+    </body>
+</html>

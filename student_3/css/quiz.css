@@ -1,0 +1,435 @@
+@import "navigation.css";
+
+/* Import particles css */
+@import "particle.css";
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+@font-face {
+    font-family: "Lemon Tuesday";
+    src: local("Lemon Tuesday"),
+        url("https://fonts.cdnfonts.com/s/52811/Lemon Tuesday.woff")
+            format("woff");
+}
+@font-face {
+  font-family: 'Cherish';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cherish/v7/ll88K2mXUyqsDsTN1inIIoAKng4ihA.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+    font-family: "IBM Plex Mono";
+    src: url(https://fonts.gstatic.com/s/ibmplexmono/v12/-F6pfjptAgt5VM-kVkqdyU8n3kwa2HdgregdFOFh.woff2)
+        format("woff2");
+}
+@font-face {
+    font-family: "Fredoka One";
+    src: url(https://fonts.gstatic.com/s/fredokaone/v13/k3kUo8kEI-tA1RRcTZGmTlHGCaen8wf-.woff2)
+        format("woff2");
+}
+@font-face {
+    font-family: "Dancing Script";
+    src: url(https://fonts.gstatic.com/s/dancingscript/v24/If2cXTr6YS-zF4S-kcSWSVi_sxjsohD9F50Ruu7BMSo3Sup8hNX6plRP.woff2)
+        format("woff2");
+}
+@font-face {
+    font-family: "Cormorant SC";
+    src: url(https://fonts.gstatic.com/s/cormorantsc/v16/0ybmGD4kxqXBmOVLG30OGwsmABIk9Bfz0jCGGXGY.woff2)
+        format("woff2");
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vh;
+    background-color: #121212;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.5vh;
+    margin-left: 15%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 2vh;
+    border: 2px solid #FFE600;
+    padding: 6vh;
+    /* background-color: #121212; */
+    color: white;
+    font-size: 4vh;
+    text-align: center;
+    height: 90%;
+    width: 50%;
+}
+
+
+h1 {
+    font-size: 5vh;
+}
+
+h2 {
+    font-family: "Lemon Tuesday";
+    font-size: 20px;
+    margin: 20px;
+}
+h4 {
+    margin: 15px;
+}
+.howWell {
+    color: black;
+    font-family: monospace;
+    background-color: #FFE600;
+    font-size: 40px;
+}
+.ldc {
+    font-family: Roboto, Arial, sans-serif;
+    color: #FFE600;
+    overflow: hidden;
+    font-size: 60px;
+    border-right: 0.15em solid orange;  /* typwriter cursor */
+    white-space: nowrap;    /* Keeps the content on a single line */
+    margin: 0 auto;     /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0em;
+    padding: 1vh 0;
+    animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+.rulebox {
+    margin: auto;
+    /* height: 200px;
+    width: 530px; */
+    height: 50%;
+    width: 100%;
+    background-color: #454545;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 2.5vh;
+}
+.rule {
+    margin: 1px;
+    text-align: left;
+    margin-left: 10px;
+}
+.rule:before {
+    content: "\21D2";
+    color: red;
+}
+#start_btn {
+    animation: wiggle 2s linear infinite;
+    border: none;
+    color: white;
+    background: #036cff;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#start_btn:hover {
+    border: 2px solid #036cff;
+    color: #036cff;
+    background-color: white;
+}
+.container {
+    /* margin: auto; */
+    border: 2px solid white;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    height: 550px;
+    width: 800;
+    margin-top: 0px;
+    background-color: #FFE600;
+    display: none;
+    border-radius: 20px;
+}
+.header {
+    background-color: black;
+    width: 800px;
+    height: 60px;
+    text-align: left;
+    display: inline-block;
+    margin-top: 20px;
+}
+#countdown {
+    /* border: 2px solid red;
+  height: 48px;
+  width: 60px;
+  margin: auto; */
+    font-family: "Monaco";
+    font-size: 30px;
+    display: inline-block;
+    align-items: right;
+    margin-left: 500px;
+    margin-bottom: 10px;
+    /* border: 2px solid white; */
+    color: white;
+}
+.question {
+    color: black;
+    font-family: "Fredoka One";
+    font-size: xx-large;
+    margin-bottom: 60px;
+    width: 680px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 90px;
+    text-align: left;
+    padding-left: 70px;
+}
+.answerContainer {
+    display: inline-block;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    margin-top: 2vh;
+}
+.answers {
+    margin-bottom: 20px;
+    text-align: left;
+    display: inline-block;
+    margin: 20px;
+}
+.answers label {
+    color: black;
+    display: block;
+    text-align: left;
+    width: 600px;
+    /* height: 25px; */
+    margin-bottom: 10;
+    background-color: white;
+    border: 2px solid rgb(212, 206, 206);
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+}
+.answers label:hover {
+    border: 2px solid black;
+    color: #036cff;
+    background-color: white;
+}
+button {
+    /* height: 60px; */
+    /* width: 170px; */
+    padding: 1vh;
+    border-radius: 10px;
+    background-color: #FFE600;
+    border: 2px solid black;
+    color: black;
+    text-align: center;
+    font-size: 28px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 10px;
+    margin-top: 30px;
+}
+button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button-block {
+    margin-top: 350px;
+    display: inline-block;
+    width: 800px;
+    height: 100px;
+}
+#next span:after {      /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_buttons_animate1 */
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+#next:hover span {
+    padding-right: 25px;
+}
+#next:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+#previous span:after {
+    content: "\00ab";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    left: -20px;
+    transition: 0.5s;
+}
+#previous:hover span {
+    padding-left: 25px;
+}
+#previous:hover span:after {
+    opacity: 1;
+    left: 0;
+}
+.slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.active-slide {
+    opacity: 1;
+    z-index: 2;
+}
+#submit {
+    border: none;
+    color: white;
+    background: #009e3a;
+}
+#submit:hover {
+    border: 2px solid #009e3a;
+    color: #009e3a;
+    background-color: white;
+}
+.endPage {
+    text-align: center;
+    position: relative;
+    display: none;
+    padding: 2vh 5vh;
+    border: 2px solid #FFE600;
+    color: white;
+    height: 90%;
+    width: 50%;
+}
+/* .Score {
+    font-family: "IBM Plex Mono";
+    display: inline-block;
+} */
+#wish {
+    /* color: black; background-color: #fbc611; */
+    overflow: hidden;
+    /* font-size: 25px; */
+    border-right: 0.15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 1vh 0; /* Gives that scrolling effect as the typing happens */
+    animation: typing 4s steps(30, end), blink-caret 0.5s step-end infinite;
+    font-family: "Dancing Script";
+    font-size: 50px;
+}
+.congrats {
+    color: #029a3a;
+}
+.gdJob {
+    color: #fed800;
+}
+.didOk {
+    color: #ff4000;
+}
+.betterLuck {
+    color: #df0f0f;
+}
+#finalScore {
+    color: black;
+    height: 60px;
+    width: 330px;
+    font-size: 30px;
+    font-family: "Geneva";
+    margin: auto;
+    background-color: #FFE600;
+    border-radius: 5px;
+}
+#finalScore p {
+    padding: 10px;
+}
+
+#spentTime {
+    font-family: "Andalus";
+    font-size: 23px;
+}
+.resultSheet {
+    margin: auto;
+    background-color: #121212;
+    
+    margin-top: 30px;
+    color: rgb(0, 0, 0);
+    padding: 30px;
+    /* width: 600px;
+    height: 300px; */
+    height: 55%;
+    overflow: scroll;
+    border: 2px solid rgb(177, 174, 174);
+    border-radius: 10px;
+}
+.qInResult {
+    color: white;
+    font-family: "Palatino";
+    font-size: 25px;
+}
+.correctColor {
+    /* padding: 5px;
+  width: 450px; */
+    color: #02ae41;
+    font-family: "Noto";
+    font-size: 22px;
+}
+.wrongColor {
+    color: #f44336;
+    font-family: "Noto";
+    font-size: 22px;
+}
+.youRCrct {
+    color: #06c34b;
+    font-family: "Noto";
+    font-size: 22px;
+}
+.ntAns {
+    color: rgb(249, 84, 25);
+    font-family: "Noto";
+    font-size: 22px;
+}
+#restart {
+    animation: wiggle 4s linear infinite;
+    background-color: white;
+    color: #f44336;
+    border-color: #f44336;
+}
+#restart::before {
+    content: "\21ba  ";
+}
+#restart:hover {
+    color: white;
+    background-color: #f44336;
+}
+
+@keyframes typing {     /* The typing effect -- https://css-tricks.com/snippets/css/typewriter-effect/ */
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes blink-caret {        /* The typewriter cursor effect --https://css-tricks.com/snippets/css/typewriter-effect/ */
+    from,
+    to {border-color: transparent;}
+    50% {border-color: orange;}
+}
+@keyframes wiggle {   /*https://blog.hubspot.com/website/css-animation-examples */
+    0%,
+    7% {transform: rotateZ(0);}
+    15% {transform: rotateZ(-15deg);}
+    20% {transform: rotateZ(10deg);}
+    25% {transform: rotateZ(-10deg);}
+    30% {transform: rotateZ(6deg);}
+    35% {transform: rotateZ(-4deg);}
+    40%,
+    100% {transform: rotateZ(0);}
+}
+
+
+#particles-js {
+    z-index: -1;
+}

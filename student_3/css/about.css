@@ -1,0 +1,242 @@
+@import "navigation.css";
+
+/* Import particles css */
+@import "particle.css";
+
+@font-face {
+    font-family: "Fredoka One";
+    src: url(https://fonts.gstatic.com/s/fredokaone/v13/k3kUo8kEI-tA1RRcTZGmTlHGCaen8wf-.woff2)
+        format("woff2");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url(https://fonts.gstatic.com/s/roboto/v30/KFOkCnqEu92Fr1MmgVxIIzIXKMny.woff2)
+        format("woff2");
+}
+
+@font-face {
+    font-family: "Lemon Tuesday";
+    src: local("Lemon Tuesday"),
+        url("https://fonts.cdnfonts.com/s/52811/Lemon Tuesday.woff")
+            format("woff");
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vh;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5vh;
+    margin-left: 15%;
+    height: 100%;
+    /* border: 2px solid red; */
+}body{
+    background-color: #121212;
+}
+
+
+
+.ProPic img {
+    border-radius: 50%;
+    /* width: 170px;
+    height: 170px; */
+    width: 25vh;
+    height: 25vh;
+    transition: transform 0.2s;
+}
+.ProPic img:hover {
+    /*https://www.w3schools.com/howto/howto_css_zoom_hover.asp*/
+    border: 4px solid #FFE600;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    margin-top: 5vh;
+    /* flex-direction: column; */
+    column-gap: 5vh;
+    justify-content: center;
+    /* border: 1px solid rebeccapurple; */
+    width: 100%;
+    
+}
+
+.ProPic {
+    text-align: center;
+    /* float: left;
+    padding: 30px; */
+}
+
+.ProPic div {
+    /* height: 5vh; */
+    border: 2px solid #FFE600;
+    margin: 3vh;
+    padding: 3vh;
+    font-size: 2vh;
+    width: 16vw;
+    height: 17vh;
+    background-color: #121212d5;
+}
+
+h2 {
+    color: white;
+    font-family: "Roboto";
+    padding-top: 10px;
+}
+
+h3 {
+    color: red;
+}
+p{
+    color: white;
+    font-family: "Roboto";
+}
+
+.ProPic img + div {
+    padding: 10px;
+    bottom: -20px;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.ProPic img:hover + div {
+    opacity: 1;
+}
+
+.rectangle1 {
+    height: 200px;
+    width: 70px;
+
+    background-color: #FFE600;
+}
+.rectangle2 {
+    height: 200px;
+    width: 70px;
+    float: right;
+    background-color: #FFE600;
+}
+:root {
+    --delay: 0;
+    --duration: 800ms;
+    --iterations: 1;
+}
+
+/* •·•·•·•·•https://frontendresource.com/css-text-animations/•·•·•·•· */
+
+.reveal-text,
+.reveal-text::after {
+    -webkit-animation-delay: var(--animation-delay, 2s);
+    animation-delay: var(--animation-delay, 2s);
+    -webkit-animation-iteration-count: var(--iterations, 1);
+    animation-iteration-count: var(--iterations, 1);
+    -webkit-animation-duration: var(--duration, 800ms);
+    animation-duration: var(--duration, 800ms);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.reveal-text {
+    font-family: "Fredoka One";
+    width: 470px;
+    /* margin-left: 510px; */
+    margin: 5vh 0;
+    --animation-delay: var(--delay, 0);
+    --animation-duration: var(--duration, 800ms);
+    --animation-iterations: var(--iterations, 1);
+    position: relative;
+    font-size: 60px;
+    -webkit-animation-name: clip-text;
+    animation-name: clip-text;
+    color: white;
+    white-space: nowrap;
+    cursor: default;
+}
+
+.reveal-text::after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFE600;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    -webkit-animation-name: text-revealer;
+    animation-name: text-revealer;
+}
+
+@-webkit-keyframes clip-text {
+    from {
+        -webkit-clip-path: inset(0 100% 0 0);
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@keyframes clip-text {
+    from {
+        -webkit-clip-path: inset(0 100% 0 0);
+        clip-path: inset(0 100% 0 0);
+    }
+    to {
+        -webkit-clip-path: inset(0 0 0 0);
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+@-webkit-keyframes text-revealer {
+    0%,
+    50% {
+        transform-origin: 0 50%;
+    }
+    60%,
+    100% {
+        transform-origin: 100% 50%;
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+@keyframes text-revealer {
+    0%,
+    50% {
+        transform-origin: 0 50%;
+    }
+    60%,
+    100% {
+        transform-origin: 100% 50%;
+    }
+    60% {
+        transform: scaleX(1);
+    }
+    100% {
+        transform: scaleX(0);
+    }
+}
+
+
+#particles-js {
+    z-index: -100;
+}
