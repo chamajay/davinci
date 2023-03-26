@@ -1,0 +1,189 @@
+@import "navigation.css";
+
+/* Import particles css */
+@import "particle.css";
+
+
+* {
+    /* border: #fff solid 1px; */
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    /* box-sizing: border-box; */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vh;
+    background-color: #121212;
+}
+
+h1 {
+    margin-bottom: 4vh;
+}
+
+button {
+    font-size: 1.8vh;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.5vh;
+    margin-left: 15%;
+    height: 100%;
+    row-gap: 5vh;
+    /* border: 2px solid red; */
+}
+
+/* body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), #FFE600 ), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+} */
+
+
+form {
+    width: 50%;
+    height: 90%;
+    max-width: 600PX;
+    border: 2px solid #FFE600;
+    padding: 4vh;
+    font-size: 1.8vh;
+    background-color: #121212;
+}
+
+#Details {
+    height: 320px;
+}
+
+subject {
+    width: 90%;
+    max-width: 600px;
+    background: transparent;
+    outline: 0;
+    padding: 10;
+    top: 0;
+    font-size: 15px;
+}
+
+.input-group {
+    margin-bottom: 30PX;
+    position: relative;
+}
+
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff;
+    color:  #fff;
+    background: transparent;
+    font-size: 15px;
+}
+
+label {
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0;
+    padding: 10px;
+    color: #fff;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button {
+    padding: 10px;
+    color: #fff;
+    outline: none;
+    border: 1px solid #fff;
+    width: 100%;
+    cursor: pointer;
+    background: transparent;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label {
+    top: -35px;
+    font-size: 14px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.row .input-group {
+    flex-basis: 48%;
+}
+
+
+select {
+    width: 100%;
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid #fff;
+    padding: 10px;
+    color: #fff;
+    top: 0;
+    cursor: text;
+    font-size: 1.8vh;
+}
+.option{
+    color: black;
+}
+.title{
+    color: #fff;
+}
+
+
+#query_title{
+    color: white;
+}
+
+
+.view_query {
+    margin: 2vh 0;
+    padding: 3vh;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.53);
+    border: 2px solid #FFE600;
+    font-size: 2vh;
+}
+
+#query {
+    /* visibility: hidden; */
+    display: none;
+    width: 39%;
+    height: 50%;
+    padding: 4vh;
+    border: 2px solid #FFE600;
+    background-color: #121212;
+}
+
+#query button {
+
+}
+
+
+#particles-js {
+    z-index: -1;
+}

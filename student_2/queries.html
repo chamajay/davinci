@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Queries</title>
+    <link rel="stylesheet" href="./css/queries.css">
+    <script src="https://kit.fontawesome.com/ce1a4b5505.js" crossorigin="anonymous"></script>
+    <script src="./lib/particles.min.js"></script>
+    <script src="./js/query.js" defer></script>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+    <div class="sidebar">
+        <div id="logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <nav id="navi">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../lifestory.html">Life Story</a></li>
+                <li><a href="../student_4/gallery.html">Gallery</a></li>
+                <li><a href="../student_3/quiz.html">Quiz</a></li>
+                <li><a href="../student_1/products.html">Products</a></li>
+                <li><a href="../student_2/queries.html">Queries</a></li>
+                <li><a href="../student_4/sitemap.html">Sitemap</a></li>
+                <li><a href="../student_3/about.html">About Us</a></li>
+				<li class="editor-link"><a href="nadeera.html">Page Developer</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <form action="mailto:ravindu.20211460@iit.ac.lk" method="POST" enctype="text/plain">
+            <h1 class="title">Send Your Query</h1>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name"><i class="fa-solid fa-user-large"></i> Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label for="email"><i class="fas fa-envelope"></i> Email Id</label>
+                </div>
+            </div>
+
+            <div class="Select-group">
+                <select type="menu-bar" id="selectionID">
+                    <option class="option">Subject</option>
+                    <option class="option">Ideas</option>
+                    <option class="option">Problems</option>
+                    <option class="option">Report</option>
+                    <option class="option">What's the new</option>
+                </select>
+                <br><br><br>
+
+                <div class="input-group">
+                    <textarea id="Details" rows="8"required></textarea>
+                    <label for="Details"><i class="fa-solid fa-file-lines"></i>  Details</label>
+                </div>
+                <button type="submit"><i class="fas fa-paper-plane"> </i> SUBMIT</button>
+                <button onclick="viewQuery(event)">View Query</button>
+            </div>
+        </form>
+        
+        <div id="query">
+            <h2 id="query_title">View Query</h2>
+            <div class="view_query">
+                <p id="query_name"></p>
+                <p id="query_email"></p>
+                <p id="query_subject"></p>
+                <p id="query_details"></p>
+            </div>
+            <button onclick="hide()">Edit</button>
+        </div>
+        
+    </div>
+</body>
+</html>
+

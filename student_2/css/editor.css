@@ -1,0 +1,124 @@
+@import "navigation.css";
+
+/* Import navigation css */
+@import "particle.css";
+
+
+/* Import animate css library  */
+@import url("../lib/animate.min.css"); 
+
+/* Load local fonts */
+@font-face {
+    font-family: "Cherish";
+    src: url("../font/Cherish-Regular.ttf");
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vh;
+}
+
+h1 {
+    font-size: 8vh;
+}
+
+h2 {
+    font-size: 4.5vh;
+}
+
+h3 {
+    font-size: 3vh;
+    /* margin-bottom: 1vh; */
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.5vh;
+    margin-left: 15%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2vw;
+    width: 100%;
+    height: 100%;
+    padding: 4vw;
+    /* border: 2px solid blue; */
+}
+
+.card > img {
+    height: 75%;
+    border: 5px solid #FFE600;
+    z-index: 5;
+}
+
+.info-wrapper {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3vh;
+    padding: 3vh 2.5vh;
+    border: 3px solid #FFE600;
+    color: white;
+    background-color: #121212;
+    text-align: justify;
+    z-index: 5;
+}
+
+
+.info-wrapper p {
+    font-size: 2.8vh
+}
+
+.tasks {
+    font-size: 3vh;
+    width: 100%;
+}
+
+.tasks tr td:first-child {
+    text-align: center;
+}
+
+.tasks img {
+    width: 4.5vh;
+    height: 4.5vh;
+}
+
+.hobbies {
+    display: flex;
+    column-gap: 2.5vw;
+    /* border: 2px solid green; */
+}
+
+.hobby {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    column-gap: .8vw;
+}
+
+.hobby img {
+    height: 3vh;
+}
+
+.tasks-wrapper {
+    display: flex;
+    /* border: 2px solid red; */
+}
