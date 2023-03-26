@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="./css/gallery.css">
+</head>
+<body>
+	<div id="particles-js"></div>
+    <div class="sidebar">
+        <div id="logo">
+            <img src="./img/logo.png" alt="logo">
+        </div>
+        <nav id="navi">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../lifestory.html">Life Story</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="../student_3/quiz.html">Quiz</a></li>
+                <li><a href="../student_1/products.html">Products</a></li>
+                <li><a href="../student_2/queries.html">Queries</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="../student_3/about.html">About Us</a></li>
+				<li class="editor-link"><a href="hasini.html">Page Developer</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main-content">
+
+		<div id="dropdown-menus">
+			<!--left pull down menu for select background colour-->
+			<div class="dropdown" style="float:left;">
+				<button class="dropbtn">Background colour</button>
+				<div class="dropdown-content" style="left:0;">
+					<option class="selectColor" onclick="changeColor (this)" value="#ffffff"> White</option>
+					<option class="selectColor" onclick="changeColor (this)" value="black"> Black</option>
+					<option class="selectColor" onclick="changeColor (this)" value="MediumSpringGreen"> Green</option>
+					<option class="selectColor" onclick="changeColor (this)" value="#80042f"> Maroon</option>
+					<option class="selectColor" onclick="changeColor (this)" value="#CC0033"> Pink</option>
+				</div>
+			</div>
+
+
+			<!--right pull down menu for selec text colour-->
+			<div class="dropdown" style="float:right;">
+				<button class="dropbtn">Text colour</button>
+				<div class="dropdown-content">
+					<option class="selectText"  onclick="changeTxt (this)" value="black">Black</option>
+					<option class="selectText"  onclick="changeTxt (this)" value="white">white</option>
+					<option class="selectText"  onclick="changeTxt (this)" value="#4ef578">Green</option>
+					<option class="selectText"  onclick="changeTxt (this)" value="#babfd9">Gray</option>
+					<option class="selectText"  onclick="changeTxt (this)" value="#CC0033">pink</option>
+				</div>
+			</div>
+		</div>
+		
+		<!--pictures for gallery-->
+		<div class="row" >
+			<div class="column">
+				<img id="img1" src="./img/gallery/monalisa.jfif" alt="Mona Lisa" height="250" width="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="border-radius:20px;" >
+			</div>
+			
+			
+			<div class="column">
+				<img id="img2" src="./img/gallery/last_supper.jpg" alt="The Last supper" height="250" width="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="border-radius:20px;" >
+			</div>
+			
+			
+			<div class="column">
+				<img id="img3" src="./img/gallery/mundi.jpg" alt="Salvator Mundi" height="250" width="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="border-radius:20px;" >
+			</div>
+			
+			
+			<div class="column">
+				<img id="img4" src="./img/gallery/lady_earnie.webp" alt="Lady with an Ermine" height="250" width="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="border-radius:20px;" >
+			</div>
+		</div>
+		
+		
+		<!--big pic and the descrption-->
+		<div class="bigpic" id="bigpic1">    
+			<div class="paragraph">
+				<img class="picture" src="./img/gallery/monalisa.jfif" alt="Mona Lisa" width="350" height="300" style="border-radius:20px;">
+				<div class="title">
+					<h2 class="content">Mona Lisa</h2>
+					<p>The Mona Lisa or Monna Lisa is a half-length portrait painting by Italian artist Leonardo da Vinci. Considered an archetypal masterpiece of the Italian Renaissance it has been described as "the best known, the most visited, the most written about, the most sung about, the most parodied work of art in the world" The painting's novel qualities include the subject's enigmatic expression, the monumentality of the composition, the subtle modelling of forms, and the atmospheric illusionism. The painting has been definitively identified to depict Italian noblewoman Lisa Gherardini the wife of Francesco del Giocondo. It is painted in oil on a white Lombardy poplar panel. Leonardo never gave the painting to the Giocondo family, and later it is believed he left it in his will to his favored apprentice Salaì. It had been believed to have been painted between 1503 and 1506; however, Leonardo may have continued working on it as late as 1517. It was acquired by King Francis I of France and is now the property of the French Republic. It has been on permanent display at the Louvre in Paris since 1797. The Mona Lisa is one of the most valuable paintings in the world. It holds the Guinness World Record for the highest-known painting insurance valuation in history at US$100 million in 1962 (equivalent to $870 million in 2021</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--big pic and the descrption-->	
+		<div class="bigpic" id="bigpic2">    
+			<div class="paragraph">
+				<img class="picture" src="./img/gallery/last_supper.jpg"" alt="The Last Supper" width="350" height="300" style="border-radius:20px;">
+				<div class="title">
+					<h2 class="content">The Last Supper</h2>
+					<p>The Last Supper or L'Ultima Cena is a mural painting by the Italian High Renaissance artist Leonardo da Vinci, dated to c. 1495–1498. The painting represents the scene of the Last Supper of Jesus with the Twelve Apostles, as it is told in the Gospel of John – specifically the moment after Jesus announces that one of his apostles will betray him. Its handling of space, mastery of perspective, treatment of motion and complex display of human emotion has made it one of the Western world's most recognizable paintings and among Leonardo's most celebrated works. Some commentators consider it pivotal in inaugurating the transition into what is now termed the High Renaissance.The work was commissioned as part of a plan of renovations to the church and its convent buildings by Leonardo's patron Ludovico Sforza, Duke of Milan. In order to permit his inconsistent painting schedule and frequent revisions, it is painted with materials that allowed for regular alterations: tempera on gesso, pitch, and mastic. Due to the methods used, a variety of environmental factors, and intentional damage, little of the original painting remains today despite numerous restoration attempts, the last being completed in 1999. Housed in the refectory of the Convent of Santa Maria delle Grazie in Milan, Italy, The Last Supper is his largest work, aside from the Sala delle Asse.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--big pic and the descrption-->   
+		<div class="bigpic" id="bigpic3">    
+			<div class="paragraph">
+				<img class="picture" src="./img/gallery/mundi.jpg" alt="Salvator Mundi" width="350" height="300" style="border-radius:20px;">
+				<div class="title">
+					<h2 class="content">Salvator Mundi</h2>
+					<p>Salvator Mundi (Latin for ''Savior of the World'') is a painting attributed in whole or in part to the Italian High Renaissance artist Leonardo da Vinci, dated to c. 1499–1510. Long thought to be a copy of a lost original veiled with overpainting, it was rediscovered, restored, and included in a major exhibition of Leonardo's work at the National Gallery, London, in 2011–2012. Christie's claimed just after selling the work that most leading scholars consider it to be an original work by Leonardo.
+						The painting depicts Christ in an anachronistic blue Renaissance dress, making the sign of the cross with his right hand, while holding a transparent, non-refracting crystal orb in his left, signaling his role as Salvator Mundi and representing the 'celestial sphere' of the heavens. Approximately thirty copies and variations of the work by pupils and followers of Leonardo have been identified. Two preparatory chalk and ink drawings of the drapery by Leonardo are held in the British Royal Collection.
+						The painting was sold at auction for US$450.3 million on 15 November 2017 by Christie's in New York to Prince Badr bin Abdullah, setting a new record for the most expensive painting ever sold at public auction. And a report of October 2019 indicated that it may be in storage in Switzerland.</p>
+				</div>
+			</div>
+		</div>
+			
+			
+		<!--big pic and the descrption-->	
+		<div class="bigpic" id="bigpic4">    
+			<div class="paragraph">
+				<img class="picture" src="./img/gallery/lady_earnie.webp" alt="Lady With an Ermine" width="350" height="300" style="border-radius:20px;">
+				<div class="title">
+					<h2 class="content">Lady with an Ermine</h2>
+					<p>The Lady with an Ermine is a portrait painting widely attributed to the Italian Renaissance artist Leonardo da Vinci. Dated to c. 1489–1491, the work is painted in oils on a panel of walnut wood. Its subject is Cecilia Gallerani, a mistress of Ludovico Sforza ("Il Moro"), Duke of Milan; Leonardo was painter to the Sforza court in Milan at the time of its execution. It is the second of only four surviving portraits of women painted by Leonardo, the others being Ginevra de' Benci, La Belle Ferronnière and the Mona Lisa.
+						
+						Lady with an Ermine is now housed at the Czartoryski Museum in Kraków, and is one of Poland's national treasures. It is part of the Princes Czartoryski Collection, which was sold for €100 million on 29 December 2016 to the Polish government by Princes Czartoryski Foundation, represented by Adam Karol Czartoryski, the last direct descendant of Izabela Czartoryska Flemming and Adam George Czartoryski, who brought the painting to Poland from Italy in 1798.</p>
+				</div>
+			</div>
+		</div>
+				
+				
+		<!--pictures for gallery-->
+		<div class="row">
+			<div class="column">
+				<img id="img5" src="./img/gallery/annuciation.jpg" alt="Annunciation" height="250" width="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="border-radius:20px;" >
+			</div>	
+			
+			
+			<div class="column">
+				<img id="img6" src="./img/gallery/rocce.jpg" alt="Virgin of the Rocks" height="250" width="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="border-radius:20px;" >
+			</div>
+			
+			
+			<div class="column">
+				<img id="img7" src="./img/gallery/virgin_and_child.jpg" alt="The Virgin and Child with Saint Anne" height="250" width="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="border-radius:20px;" >
+			</div>
+			
+			
+			<div class="column">
+				<img id="img8" src="./img/gallery/lost_battle.jpg" alt="The Battle of Anghiari" height="250" width="200" onmouseover="bigImg(this)" onmouseout="normalImg(this)" style="border-radius:20px;" >
+			</div>
+		</div>
+				
+				
+		<!--big pic and the descrption-->			
+		<div class="bigpic" id="bigpic5">    
+			<div class="paragraph">
+				<img class="picture" src="./img/gallery/annuciation.jpg" alt="Annunciation" width="350" height="300" style="border-radius:20px;">
+				<div class="title">
+					<h2 class="content">Annunciation</h2>
+					<p>The Annunciation is a painting widely attributed to the Italian Renaissance artist Leonardo da Vinci, dated to c. 1472–1476. Leonardo's earliest extant major work, it was completed in Florence while he was an apprentice in the studio of Andrea del Verrocchio. The painting was made oil and tempera on a large poplar panel and depicts the Annunciation, a popular biblical subject in 15th-century Florence. Since 1867 it has been housed in the Uffizi in Florence, the city where it was created. Though the work has been criticized for inaccuracies in its composition, it is among the best known portrayals of the Annunciation in Christian art.</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!--big pic and the descrption-->	
+		<div class="bigpic" id="bigpic6">    
+			<div class="paragraph">
+				<img class="picture" src="./img/gallery/rocce.jpg" alt="Virgin of the Rocks" width="350" height="300" style="border-radius:20px;">
+				<div class="title">
+					<h2 class="content">Virgin of the Rocks</h2>
+					<p>There are two versions of Leonardo's Virgin of the Rocks (the version in the Louvre was painted first). These two paintings are a good place to start to define the qualities of the new style of the High Renaissance. Leonardo painted both in Milan, where he had moved from Florence.
+						Both paintings show the Mary and child Jesus with the infant John the Baptist and an angel Uriel, in a rocky setting which gives the paintings their usual name. The significant compositional differences are in the gaze and right hand of the angel. There are many minor ways in which the works differ, including the colours, the lighting, the flora, and the way in which sfumato has been used.</p>
+				</div>
+			</div>
+		</div>
+					
+					
+			<!--big pic and the descrption-->	
+			<div class="bigpic" id="bigpic7">    
+				<div class="paragraph">
+					<img class="picture" src="./img/gallery/virgin_and_child.jpg" alt="The Virgin and Child with Saint Anne" width="350" height="300" style="border-radius:20px;">
+					<div class="title">
+						<h2 class="content">The Virgin and Child with Saint Anne</h2>
+						<p>The Virgin and Child with Saint Anne is an unfinished oil painting by High Renaissance artist Leonardo da Vinci, dated to c. 1501–1519. It depicts Saint Anne, her daughter the Virgin Mary and the infant Jesus. Christ is shown grappling with a sacrificial lamb symbolizing his Passion as the Virgin tries to restrain him. The painting was commissioned as the high altarpiece for the Church of Santissima Annunziata in Florence and its theme had long preoccupied Leonardo.</p>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--big pic and the descrption-->	
+			<div class="bigpic" id="bigpic8">    
+				<div class="paragraph">
+					<img class="picture" src="./img/gallery/lost_battle.jpg" alt="The Battle of Anghiari" width="350" height="300" style="border-radius:20px;">
+					<div class="title">
+						<h2 class="content">The Battle of Anghiari</h2>
+						<p>The Battle of Anghiari (1505) was a planned painting by Leonardo da Vinci in the Salone dei Cinquecento (Hall of the Five Hundred) in the Palazzo Vecchio, Florence. Its central scene would have depicted four men riding raging war horses engaged in a battle for possession of a standard at the Battle of Anghiari in 1440.
+							
+							Many preparatory studies by Leonardo still exist. The composition of the central section is best known through a drawing by Peter Paul Rubens in the Louvre, Paris. This work, dating from 1603 and known as The Battle of the Standard, was based on an engraving of 1553 by Lorenzo Zacchia, which was taken from the painting itself or possibly derived from a cartoon by Leonardo. Rubens succeeded in portraying the fury, the intense emotions and the sense of power that were presumably present in the original painting. Similarities have been noted between this Battle of Anghiari and the Hippopotamus Hunt painted by Rubens in 1616.</p>
+					</div>
+				</div>
+			</div>
+						
+		<!--mouseOver event listner and change the colour of the text and background-->
+		<script>
+
+			window.onload = function() {
+				updateNavigation();
+			}
+
+
+
+			function updateNavigation() {
+				// Set the background color of the current page link in the navigation menu
+				let naviLinkEles = document.querySelectorAll('#navi li a');
+				let currentURL = window.location.href.split('#')[0];
+				naviLinkEles.forEach(e => {
+					if (e.href == currentURL) {
+						e.classList.add('current');
+					} else {
+						e.classList.remove('current');
+					}
+				});
+			}
+
+			let isSelected = false;
+			
+			function changeColor(getColor){
+				let selectColor = getColor.value;
+				document.body.style.backgroundColor = selectColor;
+			}
+			function changeTxt(getColor){
+				let selectText = getColor.value;
+				document.body.style.color = selectText;
+			}
+			
+			function bigImg(x) {
+				x.style.height = "300px";
+				x.style.width = "250px";
+			}
+			
+			function normalImg(x) {
+				x.style.height = "250px";
+				x.style.width = "200px";
+			}
+			
+			
+			document.getElementById("img1").addEventListener("click", function(){
+				if(!isSelected){
+					document.getElementById("bigpic1").style.display="block";
+					isSelected = true;
+				}else {
+					document.getElementById("bigpic1").style.display="none";
+					isSelected = false;
+				}
+			});				
+			
+			
+			document.getElementById("img2").addEventListener("click", function(){
+				if(!isSelected){
+					document.getElementById("bigpic2").style.display="block";
+					isSelected = true;
+				}else {
+					document.getElementById("bigpic2").style.display="none";
+					isSelected = false;
+				}
+			});	
+			
+			
+			document.getElementById("img3").addEventListener("click", function(){
+				if(!isSelected){
+					document.getElementById("bigpic3").style.display="block";
+					isSelected = true;
+				}else {
+					document.getElementById("bigpic3").style.display="none";
+					isSelected = false;
+				}
+			});	
+			
+			
+			document.getElementById("img4").addEventListener("click", function(){
+				if(!isSelected){
+					document.getElementById("bigpic4").style.display="block";
+					isSelected = true;
+				}else {
+					document.getElementById("bigpic4").style.display="none";
+					isSelected = false;
+				}
+			});	
+			
+			
+			document.getElementById("img5").addEventListener("click", function(){
+				if(!isSelected){
+					document.getElementById("bigpic5").style.display="block";
+					isSelected = true;
+				}else {
+					document.getElementById("bigpic5").style.display="none";
+					isSelected = false;
+				}
+			});	
+			
+			
+			document.getElementById("img6").addEventListener("click", function(){
+				if(!isSelected){
+					document.getElementById("bigpic6").style.display="block";
+					isSelected = true;
+				}else {
+					document.getElementById("bigpic6").style.display="none";
+					isSelected = false;
+				}
+			});	
+			
+			
+			document.getElementById("img7").addEventListener("click", function(){
+				if(!isSelected){
+					document.getElementById("bigpic7").style.display="block";
+					isSelected = true;
+				}else {
+					document.getElementById("bigpic7").style.display="none";
+					isSelected = false;
+				}
+			});	
+			
+			
+			document.getElementById("img8").addEventListener("click", function(){
+				if(!isSelected){
+					document.getElementById("bigpic8").style.display="block";
+					isSelected = true;
+				}else {
+					document.getElementById("bigpic8").style.display="none";
+					isSelected = false;
+				}
+			});	
+			
+		</script>								
+	</div>
+</body>
+</html>

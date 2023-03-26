@@ -1,0 +1,144 @@
+
+/* Import particles css */
+@import "particle.css";
+
+/* Import navigation css */
+@import "navigation.css";
+
+
+
+
+/* * {
+    overflow-x:hidden;
+    text-decoration:none;
+} */
+
+body { 
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5vh;
+    /* background-color: #121212; */
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5vh;
+    margin-left: 15%;
+    height: 100%;
+    /* background-color: #121212; */
+    /* border: 2px solid red; */
+}
+
+
+/*Site map*/
+/* #stu4-title5{
+    background-image: linear-gradient(#505050, #950101, #FF0000);
+    background-position: center;
+    background-size: 100%;
+    position: relative;
+    margin:0;
+
+} */
+
+
+.Title5{
+    padding-top:20px;
+    font-family:'Trebuchet MS', sans-serif ;
+    font-size:70px ;
+    color: #FFE600;
+    text-align: center;
+    margin-top:40px;
+}
+
+
+#diagram{
+    align-content:right;
+    margin-top:0px;
+}
+
+
+#rec1, #rec2, #rec3, #rec4, #rec5, #rec6, #rec7{
+	stroke: white;
+    stroke-width: 5;
+    stroke-opacity: 0.7;
+    fill:black;
+}
+
+
+#rec1:hover{
+	stroke-opacity: 1.5;
+}
+
+
+#txt1, #txt2, #txt3, #txt4, #txt5, #txt6, #txt7{
+	fill:white;
+    font-size: 20px;
+    font-weight: 400;
+    font-family:'Trebuchet MS', sans-serif;
+    text-anchor:middle;
+}
+
+
+#txt1:hover{
+    cursor: pointer;
+    font-weight: 900;
+    fill: #FFE600;
+}
+
+
+#txt2:hover{
+    cursor: pointer;
+    font-weight: 900;
+    fill: #FFE600;
+}
+
+
+#txt3:hover{
+    cursor: pointer;
+    font-weight: 900;
+    fill: #FFE600;
+}
+
+
+#txt4:hover{
+    cursor: pointer;
+    font-weight: 900;
+    fill: #FFE600;
+}
+
+
+#txt5:hover{
+    cursor: pointer;
+    font-weight: 900;
+    fill: #FFE600;
+}
+
+
+#txt6:hover{
+    cursor: pointer;
+    font-weight: 900;
+    fill: #FFE600;
+}
+
+
+#txt7:hover{
+    cursor: pointer;
+    font-weight: 900;
+    fill: #FFE600;
+}
+
+
+#line1,#line2,#line3,#line4,#line5,#line6,#line7,#line8{
+	stroke:white;
+	stroke-width:5;
+}
+
+
+
+#particles-js {
+    z-index: -1;
+}
